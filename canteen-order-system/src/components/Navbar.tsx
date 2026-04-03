@@ -1,4 +1,4 @@
-import { NavLink } from "@/components/NavLink";
+import { NavLink } from "@/components/Navlink";
 import { UtensilsCrossed, GraduationCap } from "lucide-react";
 
 const Navbar = () => (
@@ -18,14 +18,12 @@ const Navbar = () => (
           to="/"
           end
           className="px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground transition-all"
-          activeClassName="bg-card text-foreground shadow-sm"
         >
           🍿 Snacks
         </NavLink>
         <NavLink
           to="/students"
           className="px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground transition-all"
-          activeClassName="bg-card text-foreground shadow-sm"
         >
           <span className="flex items-center gap-1.5">
             <GraduationCap className="h-4 w-4" /> Students
