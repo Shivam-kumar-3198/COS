@@ -1,3 +1,38 @@
+# 1. Create the Vite project
+npm create vite@latest canteen-order-system -- --template react-ts
+cd canteen-order-system
+
+# 2. Install Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# 3. Install core dependencies (React Router, React Query, Hook Form, Zod, Axios)
+npm install react-router-dom @tanstack/react-query axios react-hook-form @hookform/resolvers zod
+
+# 4. Install JSON Server (for mock backend)
+npm install -D json-server
+
+
+src/
+├── api/             # Axios instances and API call functions
+├── components/      # Reusable UI (SnackCard, StudentListItem, Button, Modal)
+├── hooks/           # Custom React Query hooks (useSnacks, useStudents, useOrders)
+├── pages/           # Route components (Snacks, Students, StudentDetails)
+├── types/           # TypeScript interfaces (Snack, Student, Order)
+├── App.tsx          # Router and QueryClientProvider setup
+└── main.tsx         # Entry point
+
+
+# AI Prompts Used
+
+As requested, here is a transparent log of AI assistance utilized during this prototype build. I used Gemini 3.1 Pro to help architect the initial setup and troubleshoot boilerplate configurations.
+
+**Prompts:**
+1. "Give me the optimal project folder structure for a Vite + React + TypeScript + React Query application."
+2. "Generate a sample `db.json` file for json-server containing mocked data for snacks, students, and orders."
+3. "What is the boilerplate code to wrap a Vite App component in a React Query client provider?"
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
